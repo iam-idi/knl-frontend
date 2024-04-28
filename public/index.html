@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knlba</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="shortcut icon" href="./images/logo_gold_1.png" type="image/x-icon">
+</head>
+<body class="">
+    <header class="h-[6vh] sm:h-[8vh] md:h-[10vh] w-full bg-gradient-to-r from-red-700 via-stone-800 to-stone-800 px-6 sm:px-10 flex items-center justify-between fixed z-10">
+        <a href="./index.html"><img src="./images/logo_gold_1.png" alt="" class="h-14 sm:h-20"></a>
+        <!-- burger nav start -->
+        <div id="burgerNav" onclick="OpenCloseburgerNav(event)" class="sm:hidden text-red-600 cursor-pointer">TOUCH</div>
+        <!-- burger nav end -->
+        <!-- normal nav -->
+        <nav class="hidden sm:flex text-red-600 text-sm sm:text-base font-medium sm:font-semibold gap-3 sm:gap-4">
+            <a href="#about" class="transform transition-all sm:hover:scale-110 hover:text-red-500">ABOUT</a>
+            <a href="#gallery" class="transform transition-all sm:hover:scale-110 hover:text-red-500">GALLERY</a>
+            <a href="#news" class="transform transition-all sm:hover:scale-110 hover:text-red-500">NEWS</a>
+            <a href="#testimonials" class="transform transition-all sm:hover:scale-110 hover:text-red-500">TESTIMONIALS</a>
+            <a href="#team" class="transform transition-all sm:hover:scale-110 hover:text-red-500">TEAM</a>
+            <a href="contact" class="transform transition-all sm:hover:scale-110 hover:text-red-500">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <!-- hero -->
+        <section id="hero" class="h-[80vh] md:h-[100vh] bg-[url('./images/background2.jpg')] bg-no-repeat bg-center bg-cover flex flex-col items-center justify-center">
+            <!-- burger nav items start -->
+            <!-- <nav id="burgerNavItemHolder" class="bg-gradient-to-br from-red-900 to-stone-800 h-[94vh] w-[40%] min-w-[200px] p-6 pt-8 absolute top-[6vh] right-0 hidden flex-col text-stone-300 text-sm font-semibold gap-7">
+                <a href="#about" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">ABOUT</a>
+                <a href="#gallery" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">GALLERY</a>
+                <a href="#news" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">NEWS</a>
+                <a href="#testimonials" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">TESTIMONIALS</a>
+                <a href="#team" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">TEAM</a>
+                <a href="#contact" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">CONTACT</a>
+            </nav> -->
+            <!-- burger nav items end -->
+            <p class="bg-clip-text text-transparent bg-gradient-to-r from-red-800 via-stone-500 to-red-800 text-2xl sm:text-4xl md:text-5xl font-extrabold text-center">Welcome To <br> The Official Website Of <br>
+                 KNL International BasketBall Academy</p>
+        </section>
+        <!-- about -->
+        <section id="about" class="bg-stone-800 px-4 sm:px-10 py-6 text-stone-300">
+            <h2 class="text-red-600 text-xl text-center sm:text-left sm:text-2xl font-semibold sm:font-bold mb-4 sm:mb-6">About Us</h2>
+            <div class="text-center mb-6 sm:mb-14 md:mb-18 w-[80%] sm:w-[65%] mx-auto my-0 border-y-2 border-red-900 py-2 sm:py-5">
+                <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-2 sm:mb-4 md:mb-6">Who Are We?</h3>
+                <p class="text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolore aut eum at cumque obcaecati voluptas id culpa veniam modi iste, officia animi aliquid iure.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laudantium perferendis, quaerat eos iusto unde vero fuga assumenda incidunt iure?</p>
+            </div>
+            <div class="w-full flex items-center justify-center gap-[4%] sm:gap-[10%] flex-wrap">
+                <div class="min-w-[280px] w-[40%] max-w-[80%] flex items-center justify-center flex-col bg-gradient-to-br from-stone-800 to-red-900 p-4 rounded-lg my-2 transition transform md:hover:scale-105">
+                    <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-4">Mission</h3>
+                    <p class="text-center text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum. Officiis voluptatem porro dolorum nobis?</p>
+                </div>
+                <div  class="min-w-[280px] w-[40%] max-w-[80%] flex items-center justify-center flex-col bg-gradient-to-br from-stone-800 to-red-900 p-4 rounded-lg my-2 transition transform  md:hover:scale-105">
+                    <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-4">Vision</h3>
+                    <p class="text-center text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum. Officiis voluptatem porro dolorum nobis?</p>
+                </div>
+            </div>
+        </section>
+        <!-- gallery -->
+        <section id="gallery" class="bg-gradient-to-br from-stone-900 to-red-900 px-10 py-6">
+            <h2 class="text-stone-300 text-xl text-center sm:text-left sm:text-2xl font-semibold sm:font-bold mb-4 sm:mb-6">Gallery</h2>
+            <div id="galleryPreview" class="flex gap-2 flex-wrap justify-center items-center">
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px] ">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+                <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                    <img src="./images/background.jpg" alt="" srcset="" class="">
+                </div>
+            </div>
+            <!-- hidden whole gallery -->
+            <div id="wholeGallery" class="bg-stone-300 rounded-lg pt-10 pb-5 px-2 relative hidden">
+                <div class="bg-red-900 w-5 h-5 absolute top-2 right-5" id="wholeGalleryHideMark" onclick="openCloseGallery(event)"></div>
+
+                <div class="flex gap-1 flex-wrap justify-center items-center">
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px] ">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                    <div class="border-2 border-stone-300 rounded w-[300px] sm:w-[350px]">
+                        <img src="./images/background.jpg" alt="" srcset="" class="">
+                        <p class="text-center text-xs sm:text-sm text-red-800 font-medium sm:font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsum?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- see more btn -->
+            <div class="hover:bg-red-700 bg-red-800 text-xs font-semibold sm:text-base min-w-[150px] w-[40vw] sm:w-[200px] mt-3 mb-2 sm:mt-4 mx-auto p-2 text-stone-300 animate-pulse rounded-lg text-center cursor-pointer hover:scale-95 hover:animate-none" id="galleryBtn" onclick="openCloseGallery(event)">
+                See More
+            </div>
+        </section>
+        <!-- news -->
+        <section id="news" class="bg-stone-800 px-4 sm:px-10 py-6 text-stone-300">
+            <h2 class="text-red-600 text-xl text-center sm:text-left sm:text-2xl font-semibold sm:font-bold mb-4 sm:mb-6">News</h2>
+            <div id="newsHolder" class="w-full flex flex-wrap justify-center items-center gap-[3%] sm:gap-[6%]">
+                <div  class="min-w-[280px] w-[40%] max-w-[80%] bg-[url('./images/background.jpg')] bg-center bg-cover bg-no-repeat rounded-lg my-2 transition transform md:hover:scale-105 cursor-pointer border-2 border-red-700">
+                    <div class="p-4 flex items-center justify-center flex-col rounded-md bg-[rgba(0,0,0,50%)] hover:bg-[rgba(0,0,0,70%)]">
+                        <h3 class="text-red-600 text-sm sm:text-base font-semibold sm:font-bold mb-4">The Lakers scandal</h3>
+                        <p class="text-center text-sm font-medium sm:text-base sm:font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum.</p>
+                    </div>
+                </div>
+                <div  class="min-w-[280px] w-[40%] max-w-[80%] bg-[url('./images/background.jpg')] bg-center bg-cover bg-no-repeat rounded-lg my-2 transition transform md:hover:scale-105 cursor-pointer border-2 border-red-700">
+                    <div class="p-4 flex items-center justify-center flex-col rounded-md bg-[rgba(0,0,0,50%)] hover:bg-[rgba(0,0,0,70%)]">
+                        <h3 class="text-red-600 text-sm sm:text-base font-semibold sm:font-bold mb-4">The Lakers scandal</h3>
+                        <p class="text-center text-sm font-medium sm:text-base sm:font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum.</p>
+                    </div>
+                </div>
+                <div  class="min-w-[280px] w-[40%] max-w-[80%] bg-[url('./images/background.jpg')] bg-center bg-cover bg-no-repeat rounded-lg my-2 transition transform md:hover:scale-105 cursor-pointer border-2 border-red-700">
+                    <div class="p-4 flex items-center justify-center flex-col rounded-md bg-[rgba(0,0,0,50%)] hover:bg-[rgba(0,0,0,70%)]">
+                        <h3 class="text-red-600 text-sm sm:text-base font-semibold sm:font-bold mb-4">The Lakers scandal</h3>
+                        <p class="text-center text-sm font-medium sm:text-base sm:font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum.</p>
+                    </div>
+                </div>
+                <div  class="min-w-[280px] w-[40%] max-w-[80%] bg-[url('./images/background.jpg')] bg-center bg-cover bg-no-repeat rounded-lg my-2 transition transform md:hover:scale-105 cursor-pointer border-2 border-red-700">
+                    <div class="p-4 flex items-center justify-center flex-col rounded-md bg-[rgba(0,0,0,50%)] hover:bg-[rgba(0,0,0,70%)]">
+                        <h3 class="text-red-600 text-sm sm:text-base font-semibold sm:font-bold mb-4">The Lakers scandal</h3>
+                        <p class="text-center text-sm font-medium sm:text-base sm:font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum.</p>
+                    </div>
+                </div>
+                <div  class="min-w-[280px] w-[40%] max-w-[80%] bg-[url('./images/background.jpg')] bg-center bg-cover bg-no-repeat rounded-lg my-2 transition transform md:hover:scale-105 cursor-pointer border-2 border-red-700">
+                    <div class="p-4 flex items-center justify-center flex-col rounded-md bg-[rgba(0,0,0,50%)] hover:bg-[rgba(0,0,0,70%)]">
+                        <h3 class="text-red-600 text-sm sm:text-base font-semibold sm:font-bold mb-4">The Lakers scandal</h3>
+                        <p class="text-center text-sm font-medium sm:text-base sm:font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonials -->
+        <section id="testimonials" class="bg-gradient-to-br from-stone-900 to-red-900 px-4 sm:px-10 py-6 text-stone-300">
+            <h2 class="text-stone-300 text-xl text-center sm:text-left sm:text-2xl font-semibold sm:font-bold mb-4 sm:mb-6">FeedBacks</h2>
+            <div class="text-center mb-6 sm:mb-14 md:mb-18 w-[80%] sm:w-[65%] mx-auto my-0 border-y-2 border-red-900 py-2 sm:py-5">
+                <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-2 sm:mb-4 md:mb-6">Our GoodWill</h3>
+                <p class="text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolore aut eum at cumque obcaecati voluptas id culpa veniam modi iste, officia animi aliquid iure.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="w-full flex flex-wrap justify-center items-center gap-[4%] sm:gap-[10%]">
+                <div class="min-w-[280px] w-[40%] max-w-[80%] inline-flex items-center justify-center flex-col bg-gradient-to-br from-stone-600 to-stone-900 p-4 rounded-lg my-2">
+                    <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-2 sm:mb-4">Joe Gabriel</h3>
+                    <p class="text-center text-sm sm:text-base text-wrap border-t-2 border-red-600 pt-1 sm:pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum. Officiis voluptatem porro dolorum nobis?</p>
+                </div>
+                <div class="min-w-[280px] w-[40%] max-w-[80%] inline-flex items-center justify-center flex-col bg-gradient-to-br from-stone-600 to-stone-900 p-4 rounded-lg my-2">
+                    <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-2 sm:mb-4">Joe Gabriel</h3>
+                    <p class="text-center text-sm sm:text-base text-wrap border-t-2 border-red-600 pt-1 sm:pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum. Officiis voluptatem porro dolorum nobis?</p>
+                </div>
+                <div class="min-w-[280px] w-[40%] max-w-[80%] inline-flex items-center justify-center flex-col bg-gradient-to-br from-stone-600 to-stone-900 p-4 rounded-lg my-2">
+                    <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-2 sm:mb-4">Joe Gabriel</h3>
+                    <p class="text-center text-sm sm:text-base text-wrap border-t-2 border-red-600 pt-1 sm:pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum. Officiis voluptatem porro dolorum nobis?</p>
+                </div>
+                <div class="min-w-[280px] w-[40%] max-w-[80%] inline-flex items-center justify-center flex-col bg-gradient-to-br from-stone-600 to-stone-900 p-4 rounded-lg my-2">
+                    <h3 class="text-red-600 text-sm sm:text-base font-medium sm:font-semibold mb-2 sm:mb-4">Joe Gabriel</h3>
+                    <p class="text-center text-sm sm:text-base text-wrap border-t-2 border-red-600 pt-1 sm:pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, amet unde reprehenderit recusandae nemo id non hic consectetur doloremque nisi minus iste laboriosam enim dolorum. Officiis voluptatem porro dolorum nobis?</p>
+                </div>
+            </div>
+
+        </section>
+        <!-- team -->
+        <section id="team" class="bg-stone-800 px-4 sm:px-10 py-6 text-stone-300">
+            <h2 class="text-red-600 text-xl text-center sm:text-left sm:text-2xl font-semibold sm:font-bold mb-4 sm:mb-6">Our Team</h2>
+            <!-- staffs -->
+            <div class="p-2 sm:p-4">
+                <h3 class="text-red-600 font-bold text-center border-b-2 border-red-600 pb-2 sm:pb-4 mb-2">The Leadership</h3>
+                <div class="flex flex-wrap justify-center items-center gap-5 sm:gap-7 md:gap-10">
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- players -->
+            <div class="p-2 sm:p-4">
+                <h3 class="text-red-600 font-bold text-center border-b-2 border-red-600 pb-2 sm:pb-4 mb-2">The Players</h3>
+                <div class="flex flex-wrap justify-center items-center gap-5 sm:gap-7 md:gap-10">
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/background.jpg" alt="" srcset="" class="w-20 h-20 sm:w-28 sm:h-28 rounded-full block my-2 sm:mb-5 mx-auto">
+                        <h3 class="font-medium text-sm sm:font-semibold sm:text-lg">Idris Muazu</h3>
+                        <p class="text-sm sm:text-base text-stone-400">FullStack Developer</p>
+                        <div>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>twitter</i></a>
+                            <a href="" class="text-sm sm:text-base text-stone-400"><i>instagram</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- contact us -->
+        <section id="contact" class="bg-gradient-to-br from-stone-900 to-red-900 px-6 sm:px-10 py-6 text-stone-300">
+            <h2 class="text-stone-300 text-xl text-center sm:text-left sm:text-2xl font-semibold sm:font-bold mb-4 sm:mb-6">Contact Us</h2>
+            <div  class="">
+                <p class="text-sm sm:text-base text-center w-[80%] my-3 sm:my-5 mx-auto text-stone-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas obcaecati consequuntur eaque at! Magnam eius voluptatum nisi amet voluptas.
+                </p>
+                <form action=""  class="w-full my-5 flex justify-center items-center flex-col">
+                    <label for="name" class="text-sm sm:text-lg font-semibold">
+                        Name
+                        <input type="text" id="name" autocomplete="true" class="block min-w-[200px] w-[80vw] sm:w-[400px] h-8 text-sm sm:text-base sm:h-10 my-1 sm:my-3 bg-inherit border-2 border-red-600 focus:border-stone-400 outline-none rounded-md sm:rounded-lg p-1">
+                    </label>
+                    <label for="email" class="text-sm sm:text-lg font-semibold">
+                        Email
+                        <input type="email" id="email" autocomplete="true" class="block min-w-[200px] w-[80vw] sm:w-[400px] h-8 text-sm sm:text-base sm:h-10 my-1 sm:my-3 bg-inherit border-2 border-red-600 focus:border-stone-400 outline-none rounded-md sm:rounded-lg p-1">
+                    </label>
+                    <label for="message" class="text-sm sm:text-lg font-semibold">
+                        Message
+                        <textarea name="" id="message" class="block min-w-[200px] w-[80vw] sm:w-[400px] text-sm sm:text-base my-1 sm:my-3 h-20 sm:h-28 bg-inherit border-2 border-red-600 focus:border-stone-400 outline-none rounded-lg p-1"></textarea>
+                    </label>
+                    <button class="block text-xs font-semibold sm:text-base min-w-[150px] w-[40vw] sm:w-[200px] mt-3 mb-0 sm:my-4 mx-auto bg-red-800 text-stone-300 rounded-lg p-2 hover:bg-red-700">Send Message</button>
+                </form>
+                <div class="flex gap-2 justify-center items-center mt-4 mb-2 sm:mt-10 sm:mb-5">
+                    <a href="http://"><i>twitter</i></a>
+                    <a href="http://"><i>facebook</i></a>
+                    <a href="http://"><i>instagram</i></a>
+                    <a href="http://"><i>email</i></a>
+                    <a href="http://"><i>Phone</i></a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- burger nav items start -->
+    <aside id="burgerNavItemHolder" class="bg-gradient-to-br from-red-900 to-stone-800 h-[94vh] w-[40%] min-w-[200px] p-6 pt-8 fixed top-[6vh] right-0 hidden flex-col text-stone-300 text-sm font-semibold gap-7">
+        <a href="#about" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">ABOUT</a>
+        <a href="#gallery" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">GALLERY</a>
+        <a href="#news" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">NEWS</a>
+        <a href="#testimonials" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">TESTIMONIALS</a>
+        <a href="#team" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">TEAM</a>
+        <a href="#contact" onclick="OpenCloseburgerNav(event)" class="transform transition-all sm:hover:scale-110 hover:text-red-500">CONTACT</a>
+    </aside>
+    <!-- burger nav items end -->
+    <footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
